@@ -70,7 +70,7 @@ Configure and access `pywal.nix` in your Home Manager configuration through the
 {
   # Configuration
   pywal-nix = {
-    wallpaper = /path/to/wallpaper.png; # Required
+    wallpaper = /path/to/wallpaper.png; # Required wrt that file as ../../wallpapers
     light = false;                      # Defaults to false
     backend = "wal";                    # One of "colorthief", "colorz",
                                         # "fast_colorthief", "haishoku",
