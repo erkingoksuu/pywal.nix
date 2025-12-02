@@ -47,6 +47,8 @@
                         pname = "haishoku";
                         version = "1.1.8";
                         doCheck = false;
+                        pyproject = true;
+                        build-system = [ ps.setuptools ];
 
                         src = ps.fetchPypi {
                           inherit pname version;
