@@ -60,6 +60,8 @@
                         version = "0.0.5";
                         doCheck = false;
                         dontUseCmakeConfigure = true;
+                        pyproject = true;
+                        build-system = [ ps.setuptools ];
 
                         nativeBuildInputs = [
                           pkgs.cmake
