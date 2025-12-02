@@ -38,12 +38,13 @@
                   buildInputs = with pkgs; [
                     imagemagick
                     jq
-                    python312Packages.colorthief
                     colorz
-                    python312Packages.pillow
-                    python312Packages.numpy
+
                     (pkgs.python3.withPackages (ps: [
-                      (ps.buildPythonPackage rec {
+                    ps.colorthief
+                    ps.pillow
+                    ps.numpy
+                    (ps.buildPythonPackage rec {
                         pname = "haishoku";
                         version = "1.1.8";
                         doCheck = false;
