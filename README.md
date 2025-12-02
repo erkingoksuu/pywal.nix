@@ -73,8 +73,8 @@ Configure and access `pywal.nix` in your Home Manager configuration through the
     wallpaper = /path/to/wallpaper.png; # Required
     light = false;                      # Defaults to false
     backend = "wal";                    # One of "colorthief", "colorz",
-                                        # "fast_colorthief", "haishoku",
-                                        # "schemer2", "wal"; Default to "wal"
+                                        # "haishoku", "schemer2",
+                                        # "wal"; Default to "wal"
     enableKittyIntegration = true;      # Defaults to true
   };
 
@@ -123,7 +123,6 @@ licensed under the [MIT License](./pywal/LICENSE.md).
 
 - [`pywal/backends/colorthief.py`](https://github.com/dylanaraps/pywal/blob/master/pywal/backends/colorthief.py)
 - [`pywal/backends/colorz.py`](https://github.com/dylanaraps/pywal/blob/master/pywal/backends/colorz.py)
-- [`pywal/backends/fast_colorthief.py`](https://github.com/dylanaraps/pywal/blob/master/pywal/backends/fast_colorthief.py)
 - [`pywal/backends/haishoku.py`](https://github.com/dylanaraps/pywal/blob/master/pywal/backends/haishoku.py)
 - [`pywal/backends/schemer2.py`](https://github.com/dylanaraps/pywal/blob/master/pywal/backends/schemer2.py)
 - [`pywal/backends/wal.py`](https://github.com/dylanaraps/pywal/blob/master/pywal/backends/wal.py)
