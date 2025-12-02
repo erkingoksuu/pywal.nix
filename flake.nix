@@ -66,7 +66,7 @@
                         nativeBuildInputs = [
                           pkgs.cmake
                           ps.setuptools
-                          ps.setuptools_scm
+                          ps.setuptools-scm
                           ps.scikit-build
                         ];
 
