@@ -50,6 +50,10 @@
                         pyproject = true;
                         build-system = [ ps.setuptools ];
 
+                        propagatedBuildInputs = with ps; [
+                          pillow
+                        ];
+
                         src = ps.fetchPypi {
                           inherit pname version;
                           hash = "sha256-5LmhTANYYIGxirzwS0MgFo/qk/9hHoGyvM1dUmn/y9Q=";
