@@ -55,28 +55,6 @@
                           hash = "sha256-5LmhTANYYIGxirzwS0MgFo/qk/9hHoGyvM1dUmn/y9Q=";
                         };
                       })
-                      (ps.buildPythonPackage {
-                        pname = "fast_colorthief";
-                        version = "0.0.5";
-                        doCheck = false;
-                        dontUseCmakeConfigure = true;
-                        pyproject = true;
-                        build-system = [ ps.setuptools ];
-
-                        nativeBuildInputs = [
-                          pkgs.cmake
-                          ps.setuptools
-                          ps.setuptools-scm
-                          ps.scikit-build
-                        ];
-
-                        src = pkgs.fetchgit {
-                          url = "https://github.com/bedapisl/fast-colorthief";
-                          rev = "92eda78157bed309ef9c12e85708ae21241e11d0";
-                          hash = "sha256-0S8YI2DlEMx75vuAxcWzTBCcerLvULdh4nY2k3zdsqg=";
-                          fetchSubmodules = true;
-                        };
-                      })
                     ]))
                     (pkgs.buildGoModule {
                       pname = "schemer2";
@@ -118,7 +96,6 @@
               type = lib.types.enum [
                 "colorthief"
                 "colorz"
-                "fast_colorthief"
                 "haishoku"
                 "schemer2"
                 "wal"
